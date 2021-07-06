@@ -36,17 +36,19 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 header{
-    .clearfix::after{
-      display: table;
-      content: '';
-      clear: both;
-    }
-    .logo{
-      float: left;
-      margin-left: 100px;
-    }
+    height: 100px;
+      .clearfix::after{
+        display: table;
+        content: '';
+        clear: both;
+      }
+      .logo{
+        float: left;
+        margin-left: 100px;
+      }
     nav{
       float: right;
+      padding-top: 25px;
       ul {
       justify-content: flex-end;
       list-style-type: none;
