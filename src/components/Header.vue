@@ -116,7 +116,7 @@ header{
         display: inline-block;
         margin: 0 10px;
           &:hover{
-            padding-bottom: 30px;
+            padding-bottom: 70px;
             border-bottom: 5px solid blue;
           }
           a {
