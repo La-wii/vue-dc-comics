@@ -4,7 +4,25 @@
         <div class="container">
             <div class="content">
                 <div class="box">
-                    <p>Contenuto</p>
+                    <!-- <p>Contenuto</p> -->
+                    <button>Current Series</button>
+                    <div class="container">
+                        <div class="cards">
+                            <div class="card"></div>
+                            <div class="card"></div>
+                            <div class="card"></div>
+                            <div class="card"></div>
+                            <div class="card"></div>
+                            <div class="card"></div>
+                            <div class="card"></div>
+                            <div class="card"></div>
+                            <div class="card"></div>
+                            <div class="card"></div>
+                            <div class="card"></div>
+                            <div class="card"></div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
             <div class="products">
@@ -31,8 +49,12 @@
 </template>
 
 <script>
+// import Product from "@/data/Product.js";
 export default {
+    // name:
+    // data(){
 
+    // }
 }
 </script>
 
@@ -49,12 +71,34 @@ export default {
                 background: black;
                 color: white;
                 font-size: 35px;
-                height: 100px;
+                // height: 100px;
                 // margin-top: 10px;
                     .box{
-                       p{
-                           padding: 10px;
-                       } 
+                        position: relative;
+                        button {
+                            padding: 10px 20px;
+                            background-color: blue;
+                            color: white;
+                            font-size: 20px;
+                            text-transform: uppercase;
+                            position: absolute;
+                            left: 250px;
+                            bottom: 470px;
+                        }
+                        .container{
+                           width: 80%;
+                           margin: 0 auto;
+                            .cards{
+                                display: flex;
+                                flex-wrap: wrap;
+                                    .card{
+                                        width: calc(100% / 6 - 20px);
+                                        height: 200px;
+                                        background-color: blueviolet;
+                                        margin: 20px 10px; 
+                                    }
+                                }
+                        } 
                     }
                 }
 
