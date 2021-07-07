@@ -1,5 +1,6 @@
 <template>
   <main>
+        <div class="jumbotron"></div>
         <div class="container">
             <div class="content">
                 <div class="box">
@@ -38,13 +39,18 @@ export default {
 <style scoped lang="scss">
 
     main{
+        .jumbotron{
+            background-image: url(../img/jumbotron.jpg);
+            background-size: cover;
+            height: 300px;
+        }
         .container{
             .content{
                 background: black;
                 color: white;
                 font-size: 35px;
                 height: 100px;
-                margin-top: 10px;
+                // margin-top: 10px;
                     .box{
                        p{
                            padding: 10px;
