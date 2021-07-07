@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Header msg="Welcome to Your Vue.js App" />
-    <Main msg="Welcome to Your Vue.js App" />
-    <Footer msg="Welcome to Your Vue.js App" />
+    <Header/>
+    <Main/>
+    <Footer/>
   </div>
 </template>
 

@@ -8,6 +8,8 @@
                     <button>Current Series</button>
                     <div class="container">
                         <div class="cards">
+                            <Contents v-for="(item, index) in cards" :key="index" :prod="item"/>
+                            <!-- <div class="card"></div>
                             <div class="card"></div>
                             <div class="card"></div>
                             <div class="card"></div>
@@ -18,9 +20,14 @@
                             <div class="card"></div>
                             <div class="card"></div>
                             <div class="card"></div>
-                            <div class="card"></div>
-                            <div class="card"></div>
+                            <div class="card"></div> -->
                         </div>
+
+                        <!-- <div id="cards">
+
+                            <Card v-for="(serie, index) in series" :key="index" :serie="serie"/>
+
+                        </div> -->
 
                     </div>
                 </div>
@@ -49,12 +56,21 @@
 </template>
 
 <script>
-// import Product from "@/data/Product.js";
-export default {
-    // name:
-    // data(){
 
+import Product from "@/data/Product.js"
+import Contents from '@/components/Contents.vue'
+export default {
+    // props:{
+        
     // }
+    components:{
+        Contents
+    },
+    data(){
+        return {
+            cards: Product,
+        }
+    }
 }
 </script>
 
@@ -75,6 +91,7 @@ export default {
                 // margin-top: 10px;
                     .box{
                         position: relative;
+                        height: 700px;
                         button {
                             padding: 10px 20px;
                             background-color: blue;
@@ -83,7 +100,7 @@ export default {
                             text-transform: uppercase;
                             position: absolute;
                             left: 250px;
-                            bottom: 470px;
+                            bottom: 690px;
                         }
                         .container{
                            width: 80%;
@@ -91,12 +108,12 @@ export default {
                             .cards{
                                 display: flex;
                                 flex-wrap: wrap;
-                                    .card{
-                                        width: calc(100% / 6 - 20px);
-                                        height: 200px;
-                                        background-color: blueviolet;
-                                        margin: 20px 10px; 
-                                    }
+                                    // .card{
+                                    //     width: calc(100% / 6 - 20px);
+                                    //     height: 200px;
+                                    //     background-color: blueviolet;
+                                    //     margin: 20px 10px; 
+                                    // }
                                 }
                         } 
                     }
